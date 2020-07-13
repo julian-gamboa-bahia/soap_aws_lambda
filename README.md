@@ -1,10 +1,39 @@
 # Implementação de "servidor" SOAP no sistema Serveless Lambda da AWS
 ## Introdução e método manual
 
-Uma das formas mais econômicas de armazenar arquivos é usando o sistema GLACIER de armazenamento da AWS (https://aws.amazon.com/pt/glacier/), dado que os arquivos armazenados em dito sistema podem-se recuperar facilmente. 
+O SOAP (https://en.wikipedia.org/wiki/SOAP) é uma tecnologia um pouco antiga mas que pode ser implementada na AWS com ajuda das funções lambda (https://aws.amazon.com/pt/serverless/serverlessrepo/) , ou seja de forma serveless. 
+
+Uma implementação de um servidor SOAP na forma precisa de um dominio teorico dos conceitos:
+
++ SOAP nodes
++ SOAP roles    
++ SOAP protocol binding    
++ SOAP features   
++ SOAP module
+
+<!---
+SOAP
+    This is a set of rules formalizing and governing the format and processing rules for information exchanged between a SOAP sender and a SOAP receiver.
+SOAP nodes
+    These are physical/logical machines with processing units which are used to transmit/forward, receive and process SOAP messages. These are analogous to nodes in a network.
+SOAP roles
+    Over the path of a SOAP message, all nodes assume a specific role. The role of the node defines the action that the node performs on the message it receives. For example, a role "none" means that no node will process the SOAP header in any way and simply transmit the message along its path.
+SOAP protocol binding
+    A SOAP message needs to work in conjunction with other protocols to be transferred over a network. For example, a SOAP message could use TCP as a lower layer protocol to transfer messages. These bindings are defined in the SOAP protocol binding framework.[13]
+SOAP features
+    SOAP provides a messaging framework only. However, it can be extended to add features such as reliability, security etc. There are rules to be followed when adding features to the SOAP framework.
+SOAP module
+    A collection of specifications regarding the semantics of SOAP header to describe any new features being extended upon SOAP. A module needs to realize zero or more features. SOAP requires modules to adhere to prescribed rules.[14]
+
+-->
+
 
 
 <!---
+
+
+
+https://www.soapui.org/soapui-projects/soapui-projects.html/
 
 Para este fim foi construído inicialmente um sistema caraterziado por:
 
@@ -105,7 +134,7 @@ Ve-se que este processamento manual pode-se transformar numa "Máquina de Estado
     - Nulla volutpat aliquam velit
 + Very easy!
 
--->
+
 
 
 Não se esqueça de usar o CACHE das credenciais para agilizar as operações
@@ -113,3 +142,5 @@ Não se esqueça de usar o CACHE das credenciais para agilizar as operações
 + git config --global credential.helper cache
 
 + git config --global credential.helper 'cache --timeout=13600'
+
+-->
