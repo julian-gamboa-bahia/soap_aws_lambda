@@ -11,6 +11,12 @@ Uma implementação de um servidor SOAP na forma precisa de um dominio teorico d
 + SOAP features   
 + SOAP module
 
+O primeiro que deve se ter na mão para um desevolvimento assim são a descrição do serviço (arquivo WSDL https://www.devmedia.com.br/wsdl-simplifique-a-integracao-de-dados-via-web-service/30066 e https://fabriciosanchez.azurewebsites.net/3/wsdl-o-que-e-pra-que-serve-onde-utilizo/) e o esquema (arquivo XSD ) os quais podem ser parseados com ajuda das ferramantas:
+
++ Um parser (on-line) do WSDL: https://www.wsdl-analyzer.com/
++ Um parser (on-line) do XSD: http://xsd2xml.com/
+
+
 <!---
 SOAP
     This is a set of rules formalizing and governing the format and processing rules for information exchanged between a SOAP sender and a SOAP receiver.
@@ -30,7 +36,6 @@ SOAP module
 
 
 <!---
-
 
 
 https://www.soapui.org/soapui-projects/soapui-projects.html/
