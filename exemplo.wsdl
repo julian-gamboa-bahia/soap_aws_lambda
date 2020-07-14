@@ -1,0 +1,88 @@
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+ xmlns:tns="http://www.mayconoliveira.org/webservices/"   
+ xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="webservices"
+ targetNamespace="http://www.mayconoliveira.org/webservices/">
+ <wsdl:documentation>Prezado fornecedor, este é um Web Service de
+  exemplo, voltado a inclusao de clientes.
+ </wsdl:documentation>
+ <wsdl:types>
+  <xsd:schema targetNamespace="http://www.mayconoliveira.org/webservices/">
+   <xsd:element name="ClienteRequest">
+    <xsd:complexType>
+     <xsd:sequence>
+      <xsd:element name="nome" type="xsd:string">
+       <xsd:annotation>
+        <xsd:documentation>
+         Aqui você deve enviar o nome do cliente
+         exatamente como consta em seu RG
+        </xsd:documentation>
+       </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="idade" type="xsd:int" minOccurs="0">
+       <xsd:annotation>
+        <xsd:documentation>
+         Informe a idade do cliente a ser utilizado no
+         email marketing.
+        </xsd:documentation>
+       </xsd:annotation>
+      </xsd:element>
+     </xsd:sequence>
+    </xsd:complexType>
+   </xsd:element>
+   <xsd:element name="ClienteResponse">
+    <xsd:complexType>
+     <xsd:sequence>
+      <xsd:element name="mensagem" type="xsd:string">
+       <xsd:annotation>
+        <xsd:documentation>
+         Mensagem devolvida do Web Service.
+        </xsd:documentation>
+       </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="numeroRecibo" type="xsd:int"
+       minOccurs="0">
+       <xsd:annotation>
+        <xsd:documentation>
+         Recibo da inclusão. Somente é devolvido em
+         caso de sucesso.
+        </xsd:documentation>
+       </xsd:annotation>
+      </xsd:element>
+     </xsd:sequence>
+    </xsd:complexType>
+   </xsd:element>
+  </xsd:schema>
+ </wsdl:types>
+ <wsdl:message name="ClienteRequest">
+  <wsdl:part element="tns:ClienteRequest" name="parameters" />
+ </wsdl:message>
+ <wsdl:message name="ClienteResponse">
+  <wsdl:part element="tns:ClienteResponse" name="parameters" />
+ </wsdl:message>
+ <wsdl:portType name="webservicesPortType">
+  <wsdl:operation name="incluirCliente">
+   <wsdl:input message="tns:ClienteRequest" />
+   <wsdl:output message="tns:ClienteResponse" />
+  </wsdl:operation>
+ </wsdl:portType>
+ <wsdl:binding name="webservicesSOAP" type="tns:webservicesPortType">
+  <soap:binding style="document"
+   transport="http://schemas.xmlsoap.org/soap/http" />
+  <wsdl:operation name="incluirCliente">
+   <soap:operation soapAction=
+     "http://www.mayconoliveira.org/webservices/incluirCliente" />
+   <wsdl:input>
+    <soap:body use="literal" />
+   </wsdl:input>
+   <wsdl:output>
+    <soap:body use="literal" />
+   </wsdl:output>
+  </wsdl:operation>
+ </wsdl:binding>
+ <wsdl:service name="webservices">
+  <wsdl:port binding="tns:webservicesSOAP" name="webservicesSOAP">
+   <soap:address location="http://www.mayconoliveira.org/meuwebserviceaqui" />
+  </wsdl:port>
+ </wsdl:service>
+</wsdl:definitions>
