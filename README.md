@@ -20,6 +20,20 @@ Os arquivos de teste podem se ver em:
 
 + **nfe-test.xml** (https://github-java-script.s3.us-east-2.amazonaws.com/cleison_paulo/nfe-test.xml)
 
+## Detalhes de Segurança eletrônicos:
+
+Tradicionalmente a chave eletrônica é gerada com ajuda das certificações nacionais:
+
+https://www.iti.gov.br/icp-brasil
+
+https://www.iti.gov.br/repositorio/84-repositorio/143-repositorio-ac-raiz
+
+Git para gerar a nota:
+
+https://github.com/flexait/nfse
+
+
+
 <!---
 SOAP
     This is a set of rules formalizing and governing the format and processing rules for information exchanged between a SOAP sender and a SOAP receiver.
