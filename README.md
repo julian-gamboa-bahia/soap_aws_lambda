@@ -16,6 +16,9 @@ O primeiro que deve se ter na mão para um desevolvimento assim são a descriç�
 + Um parser (on-line) do WSDL: https://www.wsdl-analyzer.com/
 + Um parser (on-line) do XSD: http://xsd2xml.com/
 
+Os arquivos de teste podem se ver em:
+
++ **nfe-test.xml** (https://github-java-script.s3.us-east-2.amazonaws.com/cleison_paulo/nfe-test.xml)
 
 <!---
 SOAP
