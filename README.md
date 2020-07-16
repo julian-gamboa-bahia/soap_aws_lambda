@@ -32,8 +32,9 @@ Git para gerar a nota:
 
 https://github.com/flexait/nfse
 
+## Considerações para Develovep:
 
-
+https://medium.com/greenm/aws-lambda-or-aws-fargate-the-step-by-step-guide-to-choosing-the-right-technology-925ebcf89b7c
 <!---
 SOAP
     This is a set of rules formalizing and governing the format and processing rules for information exchanged between a SOAP sender and a SOAP receiver.
