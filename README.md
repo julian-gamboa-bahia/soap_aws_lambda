@@ -11,7 +11,7 @@ Uma implementação de um servidor SOAP na forma precisa de um dominio teorico d
 + SOAP features   
 + SOAP module
 
-O primeiro que deve se ter na mão para um desevolvimento assim são a descrição do serviço (arquivo WSDL https://www.devmedia.com.br/wsdl-simplifique-a-integracao-de-dados-via-web-service/30066 e https://fabriciosanchez.azurewebsites.net/3/wsdl-o-que-e-pra-que-serve-onde-utilizo/) e o esquema (arquivo XSD ) os quais podem ser parseados com ajuda das ferramantas:
+O primeiro que deve se ter na mão para um desevolvimento assim, é a descrição do serviço (arquivo WSDL https://www.devmedia.com.br/wsdl-simplifique-a-integracao-de-dados-via-web-service/30066 e https://fabriciosanchez.azurewebsites.net/3/wsdl-o-que-e-pra-que-serve-onde-utilizo/) e o esquema (arquivo XSD ) os quais podem ser parseados com ajuda das **ferramantas On-line**:
 
 + Um parser (on-line) do WSDL: https://www.wsdl-analyzer.com/
 + Um parser (on-line) do XSD: http://xsd2xml.com/
@@ -19,6 +19,8 @@ O primeiro que deve se ter na mão para um desevolvimento assim são a descriç�
 Os arquivos de teste podem se ver em:
 
 + **nfe-test.xml** (https://github-java-script.s3.us-east-2.amazonaws.com/cleison_paulo/nfe-test.xml)
+
+Com ajuda do framework Spring (https://spring.io/guides/gs/producing-web-service/) pode-se gerar um serviço WEB (https://github.com/spring-guides/gs-producing-web-service) 
 
 ## Detalhes de Segurança eletrônicos:
 
