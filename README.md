@@ -20,7 +20,14 @@ Os arquivos de teste podem se ver em:
 
 + **nfe-test.xml** (https://github-java-script.s3.us-east-2.amazonaws.com/cleison_paulo/nfe-test.xml)
 
-Com ajuda do framework Spring (https://spring.io/guides/gs/producing-web-service/) pode-se gerar um serviço WEB (https://github.com/spring-guides/gs-producing-web-service) 
+Com ajuda do framework Spring (https://spring.io/guides/gs/producing-web-service/) pode-se gerar um serviço WEB (https://github.com/spring-guides/gs-producing-web-service), sendo possível criar rapidamente um servidor SOAP fazendo:
+
++ **Testando o schema XSD:**  após materializar o servidor WEB (exemplo de 15 minutos ou horas) pode-se inserir um XSD um pouco diferente do scheme presenta na documentação tendo como principal mudança o uso de um tag diferente, sendo preciso mudar o tag de "XSD" para "XS" (https://stackoverflow.com/questions/1193563/difference-between-xs-and-xsd-in-xml-schema-file) . Outra mudança (que pode-se ver no arquivo:https://github-java-script.s3.us-east-2.amazonaws.com/cleison_paulo/versao_1_countries.xsd) considerar em **desconsiderar o uso o tag de Signature**
+
++ **Testando o schema XSD:**  após materializar o servidor WEB (exemplo de 15 
+
+
+
 
 ## Detalhes de Segurança eletrônicos:
 
