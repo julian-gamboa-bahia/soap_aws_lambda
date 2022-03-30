@@ -1,4 +1,4 @@
-# Implementação de "servidor" SOAP no sistema Serveless Lambda da AWS
+# Implementação de "servidor" SOAP no sistema Serveless Lambda da AWS (2022)
 ## Introdução e método manual
 
 O SOAP (https://en.wikipedia.org/wiki/SOAP) é uma tecnologia um pouco antiga mas que pode ser implementada na AWS com ajuda das funções lambda (https://aws.amazon.com/pt/serverless/serverlessrepo/) , ou seja de forma serveless. 
